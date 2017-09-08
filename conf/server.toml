@@ -1,0 +1,21 @@
+# This is a TOML document. Boom.
+
+# backend canbe used etcd / etcdv3 / consul / zookeeper
+# backend = "etcd"
+
+version = "1.0.0"
+
+
+[etcd]
+endpoints = ["http://demo.n1q.com:2379"]
+base_path = "/"
+#ca_file =""
+#cert_file =""
+#key_file = ""
+
+
+
+[etcdv3]
+endpoints = ["http://127.0.0.1:2379"]
+# this is profix key
+base_path = "/"
