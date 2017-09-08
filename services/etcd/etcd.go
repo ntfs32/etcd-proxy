@@ -19,6 +19,16 @@ var (
 	resp *client.Response
 )
 
+var (
+	HEADER_INFO = "ETCD CONFIG MANAGER"
+	NODE_LIST string = "Etcd Cluster Nodes"
+	NODE_INFO string = "Etcd Node Info"
+	KEY_LIST string = "Keys List Check"
+	VALUE_VIEW string = "View Key Value"
+	NOTICE_INFO string = "Notice Info"
+	HELP_FOOTER string = "Help Infos"
+)
+
 func init()  {
 	cfg = &client.Config{
 		Endpoints:etcdConfig.Endpoints,

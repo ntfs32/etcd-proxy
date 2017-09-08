@@ -13,27 +13,23 @@
 			"Rev": "6c409036e1aea1420f2e1a196f95c0e3c4aef091"
 		},
 		{
-			"ImportPath": "github.com/moul/http2curl",
-			"Rev": "4e24498b31dba4683efb9d35c1c8a91e2eda28c8"
+			"ImportPath": "github.com/jroimartin/gocui",
+			"Comment": "v0.3.0-68-g4f518ed",
+			"Rev": "4f518eddb04b8f73870836b6d1941e8aa3c06637"
 		},
 		{
-			"ImportPath": "github.com/parnurzeal/gorequest",
-			"Comment": "v0.2.15-7-g5bf13be",
-			"Rev": "5bf13be198787abbed057fb7c4007f372083a0f5"
+			"ImportPath": "github.com/mattn/go-runewidth",
+			"Comment": "v0.0.2-3-g97311d9",
+			"Rev": "97311d9f7767e3d6f422ea06661bc2c7a19e8a5d"
 		},
 		{
-			"ImportPath": "github.com/pkg/errors",
-			"Comment": "v0.8.0-5-gc605e28",
-			"Rev": "c605e284fe17294bda444b34710735b29d1a9d90"
+			"ImportPath": "github.com/nsf/termbox-go",
+			"Rev": "4ed959e0540971545eddb8c75514973d670cf739"
 		},
 		{
-			"ImportPath": "golang.org/x/net/publicsuffix",
-			"Rev": "f5079bd7f6f74e23c4d65efa0f4ce14cbd6a3c0f"
-		},
-		{
-			"ImportPath": "gopkg.in/urfave/cli.v2",
-			"Comment": "v1.19.1-264-g50a0fde",
-			"Rev": "50a0fdeea6330854c7b05371cce1fac8c7e636d2"
+			"ImportPath": "github.com/urfave/cli",
+			"Comment": "v1.20.0-3-gf017f86",
+			"Rev": "f017f86fccc5a039a98f23311f34fdf78b014f78"
 		},
 		{
 			"ImportPath": "gopkg.in/yaml.v2",

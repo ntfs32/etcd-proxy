@@ -2,7 +2,7 @@ package main
 
 import (
 	"os"
-	"gopkg.in/urfave/cli.v2"
+	"github.com/urfave/cli"
 	"github.com/ntfs32/etcd-proxy/config"
 )
 
@@ -13,16 +13,22 @@ func init()  {
 }
 
 func main() {
-	app := &cli.App{
-		Name:    "etcd-proxy",
-		Usage:   "Discovery Config Manager",
-		Version: Config.Version,
+	app := cli.NewApp()
+	app.Name = "etcd-proxy"
+	app.Usage = "etcd manager cli monitor"
+	app.Version = Config.Version
+	app.Commands = []cli.Command{
+		{
+			Name:    "monit",
+			Aliases: []string{"m"},
+			Usage:   "start a monitor for etcd",
+			Action: func(c *cli.Context) error {
+				StartMonit()
+				return nil
+			},
+		},
 	}
 	app.Action=  func(c *cli.Context) error {
-
-		if (c.Args().Get(0) == "monit"){
-			StartMonit()
-		}
 		return nil
 	}
 	app.Run(os.Args)
